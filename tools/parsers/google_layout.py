@@ -1,7 +1,7 @@
 import os
 
 def parseDocument(file_name:str):
-    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = './sa-poc.json'
+    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = './google_credentials.json'
 
     documentai_doc = process_document_layout_sample(project_id,location,processor_id,processor_version,file_name,mime_type)
     return documentai_doc
